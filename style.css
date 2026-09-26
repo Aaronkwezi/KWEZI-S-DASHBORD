@@ -26,23 +26,27 @@ h1,.sidebar-nav{
 
 .header-top{
    display: grid;
-   grid-template-columns: repeat(5,auto);
+   grid-template-columns: auto 1fr auto auto auto;
+   align-items: center;
+   gap: 20px;
 
 }
 .header-bottom{
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: 1fr auto;
+    align-items: center;
 }
 .main-content-container{
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: 3fr 1fr;
+    gap:20px;
 }
 .your-projects{
     margin: 20px;
 }
 .projects-grid{
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(2,1fr);
     gap: 10px;
 }
 .project-card{
@@ -50,9 +54,7 @@ h1,.sidebar-nav{
     background-color: orange;
     height: auto;
 }
-.project-svg{
-    
-}
+
 .right-nav{
     display: grid;
     margin:20px;
