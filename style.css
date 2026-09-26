@@ -1,7 +1,6 @@
 body{
     display: grid;
     grid-template-columns: 250px 1fr;
-    min-height: 100vh;
     margin: 0;
 }
 .sidebar-container{
@@ -35,11 +34,24 @@ h1,.sidebar-nav{
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+    margin-right: 15px;
+}
+.person-info{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.action-buttons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: auto;
 }
 .main-content-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap:20px;
+    align-content: start;
 }
 .your-projects{
     margin: 20px;
@@ -48,11 +60,20 @@ h1,.sidebar-nav{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
+    align-content: start;
 }
 .project-card{
-
     background-color: orange;
-    height: auto;
+    padding: 10px;
+}
+.project-svg{
+    display: flex;
+    justify-content: flex-end;
+    gap:12px;
+}
+svg{
+    width: 24px;
+    height: 24px;
 }
 
 .right-nav{
