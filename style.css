@@ -7,9 +7,14 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: blue;
+    background-color: rgb(88, 87, 87);
+    color: whitesmoke;
 }
-h1,.sidebar-nav{
+ .sidebar-item{
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    align-items: center;
+    gap: 12px;
     margin: 20px;
 }
 .content-page{
@@ -19,9 +24,10 @@ h1,.sidebar-nav{
 }
 .header-container{
     background-color:bisque;
-    box-shadow:  0 3px 8px rgba(0, 0, 0, 0.2);
     display: grid;
     padding: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .header-top{
@@ -57,11 +63,15 @@ h1,.sidebar-nav{
 }
 button{
     background-color: black;
-    color: whitesmoke;
-    border-radius: 10px;
+    color: orange;
+    border-radius: 15px;
     margin: 15px;
     padding: 8px;
 }
+button:hover{
+    background-color: whitesmoke;
+}
+
 .main-content-container{
     display: grid;
     background-color: rgb(224, 222, 222);
@@ -84,6 +94,7 @@ button{
     border-radius: 10px;
     border-left: 2px solid orange;
     background-color: whitesmoke;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .project-svg{
     display: flex;
@@ -133,6 +144,7 @@ svg{
      background-color: whitesmoke;
      border-radius: 10px;
      padding: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 } 
 .announcement{
     padding: 10px;
@@ -159,6 +171,7 @@ svg{
     padding-bottom: 10px;
     border-radius: 10px;
     background-color: whitesmoke;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .trending-profile{
     display: flex;
@@ -172,6 +185,16 @@ svg{
     font-size: small;
     margin: 0;
     padding: 2px;
+}
+.profile-picture-main{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+}
+.profile-picture-main:hover{
+    border-color:  orange;
 }
 .profile-picture {
     width: 48px;
