@@ -18,7 +18,7 @@ h1,.sidebar-nav{
     
 }
 .header-container{
-    background-color:whitesmoke;
+    background-color:bisque;
     box-shadow:  0 3px 8px rgba(0, 0, 0, 0.2);
     display: grid;
     padding: 8px;
@@ -53,6 +53,14 @@ h1,.sidebar-nav{
     align-items: center;
     gap: 25px;
     padding: auto;
+    
+}
+button{
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 8px;
 }
 .main-content-container{
     display: grid;
@@ -164,4 +172,14 @@ svg{
     font-size: small;
     margin: 0;
     padding: 2px;
+}
+.profile-picture {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+}
+.profile-picture:hover{
+    border-color:  orange;
 }
