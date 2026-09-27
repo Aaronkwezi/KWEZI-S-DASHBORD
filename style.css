@@ -8,14 +8,23 @@ body{
     flex-direction: column;
     gap: 15px;
     background-color: rgb(88, 87, 87);
-    color: whitesmoke;
+    color: black;
+    height: 100vh;
+    overflow-y:auto;
+    position: sticky;
+    top:0;
 }
  .sidebar-item{
     display: grid;
     grid-template-columns: 24px 1fr;
     align-items: center;
+    justify-content: center;
     gap: 12px;
-    margin: 20px;
+    margin: 0px;
+    padding: 10px;
+}
+.sidebar-item:hover{
+    background-color: bisque;
 }
 .content-page{
     display: grid;
@@ -101,10 +110,7 @@ button:hover{
     justify-content: flex-end;
     gap:12px;
 }
-.project-svg>svg{
-    width: 24px;
-    height: 24px;
-}
+
 svg{
     width: 24px;
     height: 24px;
@@ -119,15 +125,7 @@ svg{
     flex: 0 0 auto;
     color: #243b53;
 }
-.avatar-icon{
-    width: 36px;
-    height: 36px;
-    flex: 0 0 auto;
-}
-.avatar-large{
-    width: 48px;
-    height: 48px;
-}
+
 
 .right-nav{
     display: flex;
@@ -205,4 +203,12 @@ svg{
 }
 .profile-picture:hover{
     border-color:  orange;
+}
+.footer{
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 16px;
+    color: #666;
+    background-color: rgb(224, 222, 222);
+    font-size: 14px;
 }
